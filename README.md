@@ -3,7 +3,8 @@
 An enterprise-grade batch data engineering pipeline that ingests incremental car sales data from Azure SQL Database, processes it across a Medallion Architecture in Azure Data Lake Storage Gen2 (ADLS Gen2), and models a Star Schema with Slowly Changing Dimensions (SCD Type 2) in Azure Databricks.
 
 ## Architecture Overview
-![Architecture Diagram](assets/architecture_diagram.png)
+
+<img width="1408" height="768" alt="azure carsales project" src="https://github.com/user-attachments/assets/38e7ac4b-6bee-49ce-9bd2-04a1b407e82a" />
 
 ## Tech Stack
 * **Cloud Platform:** Microsoft Azure
