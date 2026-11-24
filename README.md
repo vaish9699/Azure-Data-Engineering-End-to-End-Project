@@ -34,6 +34,9 @@ An enterprise-grade batch data engineering pipeline that ingests incremental car
 * **Gold Layer (Star Schema + SCD Type 2):**
   * Orchestrated via a Databricks Multi-Task Job (`Data-Model`) that executes dimension notebooks in parallel before loading `gold_fact_sales`.
   * Implements **SCD Type 2** using Delta Lake `MERGE` statements (`start_date`, `end_date`, `is_current`) to preserve historical changes across dealers, branches, and car models.
+ 
+    <img width="1511" height="821" alt="Pasted 24-11-2026 at 11 06 45" src="https://github.com/user-attachments/assets/0ee22149-8871-4a73-8cae-bab5a4e97404" />
+
 
 ## How to Run / Setup
 1. **Azure SQL Setup:** Run scripts in `/sql` to create the source tables, watermark table, and update stored procedure.
