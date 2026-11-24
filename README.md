@@ -16,24 +16,8 @@ An enterprise-grade batch data engineering pipeline that ingests incremental car
 * **CI/CD & Version Control:** GitHub
 
 ## Repository Structure
-├── adf/
-│   ├── pipeline/
-│   │   ├── increm_data_pipeline.json      # Main watermark ingestion pipeline
-│   │   └── source_prep.json               # Initial historical data load pipeline
-│   └── dataset/                           # Parameterized Azure SQL & ADLS datasets
-├── sql/
-│   ├── create_watermark_table.sql         # Metadata control table DDL
-│   └── usp_write_watermark.sql            # Stored procedure to update high-watermark
-├── databricks/
-│   ├── 01_silver_transformation.ipynb     # Data cleansing, deduplication, and schema enforcement
-│   ├── 02_gold_dim_branch.ipynb           # SCD Type 2 logic for Branch dimension
-│   ├── 03_gold_dim_date.ipynb             # Date dimension generation
-│   ├── 04_gold_dim_dealer.ipynb           # SCD Type 2 logic for Dealer dimension
-│   ├── 05_gold_dim_model.ipynb            # SCD Type 2 logic for Car Model dimension
-│   └── 06_gold_fact_sales.ipynb           # Surrogate key lookups & Fact table load
-├── assets/
-│   └── architecture_diagram.png
-└── README.md
+<img width="793" height="411" alt="image" src="https://github.com/user-attachments/assets/6499dea7-b580-4e61-b0bc-c02de7b20f24" />
+
 
 ## Key Pipeline Workflows
 
